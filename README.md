@@ -1,4 +1,5 @@
 # Reading Notes
+
 Growth mindset to me means:
 
 **1.Adaptable**
