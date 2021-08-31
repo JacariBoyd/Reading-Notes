@@ -1,2 +1,2 @@
-# Learning-Journal-
+# Reading Notes
 Learning Path (Reflection/Self Aware)
