@@ -1,5 +1,3 @@
-# Reading Notes
-
 Growth mindset to me means:
 
 **1.Adaptable**
@@ -26,9 +24,8 @@ Growth mindset to me means:
 
 6a. Being able to listen to others opinions or insight instead of being stubborn and stuck to one way
 
-As Kevin Gates said: 
 >_A vision without action 
->is merely a dream._
-
+is merely a dream._
+> - Kevin Gates
  ## Jacari Boyd 
  I am from Atlanta, Georgia. Currently I attend __Pivot Technology School__ to get education in _Software Develop_. I am a true believer that in order to get anything you want out of life you must put in the equal amount of work required to obtain your vision. You should never try anything that you know you will not give _120%_ all the way through and through.
