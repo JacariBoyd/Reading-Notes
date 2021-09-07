@@ -1,7 +1,7 @@
 # **Command Line** 
 *Commmand line/terminal* - is a text based interface to the system. You enter commands by typing them on the keyboard.
 The command line is also very *case sensitivite*.
-- for example s and S can perform different actions 
+* for example s and S can perform different actions 
 Spaces in a command line are valid but still have to be careful with them.
 * There are 2 ways to make spaces vaild 
 1.) **Quotes('')("")** - anything inside quotes are considered a single item 
