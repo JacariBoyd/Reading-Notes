@@ -1,0 +1,156 @@
+Git Hub 
+
+Version Control System = a system that allows you to revisit various versions of a 
+	file or set of files by recording changes
+Using a VCS mistakes with files can be easily remedied
+ Things you can do with Version Control:
+	- revert a file or project to a previous version
+	- track modifications
+	- modifying individuals 
+	- compare changes
+
+Local Version Control Systems - entails one database on your hard disk that stores changes to files
+
+Centralized Version Control (CVCS) - entails a single server storing all changes
+	and file versions, which can be accessed by various clients. 
+	- this eliminated the need to involve all local databases 
+	- allowed programmers to have more knowledge of team memebers'
+	activites with certain files
+	- Gave admini more control over divvying up revision privileges 
+	- if a CVS goes down, collaborators cannot work with each other
+	on a file or save changes and new versions 
+ 	- in the event of corruption of a central database's hard disk all
+	work will be lost, except for any portions on local machines
+
+Distributed Version Control (DVCS) - addresses the major vulnerability of the CVS
+		- server as a single point of failure. 
+		- allows clients to create mirrored repositories. 
+			(helps prevent catastrophic loss)
+		- allows for multiple mirrored repositories, which allows for
+	teams to collaborate in various ways to complete a joint project.
+		- enables the use of various simultaneous workflows
+What Is Git?
+
+Snapshots 
+Git is a DVCS that stores data in a file system made up of snapshots. 
+Each time you save a changed version of your project — called commit — Git creates a snapshot of the file 
+and stores a reference to it. If the file has not changed, Git only stores a 
+reference to the already-stored identical version of it.
+
+Local Operations
+most relies on local operations. 
+Allows for process expediency 
+allows for the continuation of work on a project even when not online/vpn
+
+Tracking Changes
+ - tracks every single changed applied to any file
+ - Git will always detect file corruption or loss of information in transit 
+
+Loss of Data
+ - Greatly minimize the possibility of irreversible damage to files
+
+States 3
+ 1.) Committed - Data is securely stored in a local database 
+ 2.) Modified - File has been changed but not committed to the database 
+ 3.) Staged - Flagged a file's changed version to be committed in the next snapshot
+
+Graphical Clients
+Git includes inherent Graphical User Interface tools(GUI)
+Can also utilize third-party tools created for particular platforms 
+ 
+Initial Customization
+Configuration of Variables
+ * a git tool called git config allows the setting of configuration variables that
+ control aspects of Git's operation and look
+
+Identity Setting 
+ * After installing Git, users should immediately set the user name and 
+ email address, which will be used for every Git commit.
+
+Default Text Editor
+ * git config --gloal core.editor emacs
+without configuration of a default text editor, Git will use the system's default editor-most likely Vim
+
+Check Setting
+* git config --list 
+to check settings 
+
+Getting help
+* git help command 
+* git command --help
+* man git-command
+
+Setting up a Git Repository 
+
+Importing 
+
+to important an existing project or directory into Git 
+ 1. Switch to the target directory 
+	* $ cd example
+ 2. Git init command
+	* $ git init
+ 3. to start tracking these repository files 
+	* $ git add *.c
+	* $ git add LICENSE
+	* $ git command -m "any message here"
+CLoning
+
+You can also create a copy of an existing Git repository from a particular server 
+by using the clone command with a repository’s URL:
+	* $ git clone https://github.com/example
+
+To clone a repository into a directory with another name
+ of your choosing, use the following command format:
+	* $ git clone https://github.com/example mydirectory
+
+Local Repository Structure 
+The local Git repository has three components:
+
+1. Working Directory: The actual files reside here.
+2. Index: The area used for staging
+3. Head: Points to the most recent commit
+
+Saving Changes
+ All files in a working copy of a project file are either
+in a tracked or untracked state
+
+Tracked - can be modified, unmodified, or staged; they were part of the most recent file of snapshot
+
+Untracked - were not in the last snapshot and do not currently reside in the staging area
+ 
+the life cycle of file status
+After you edit a file, Git flags it as modified because of changes made after the previous commit.
+You stage the modified file.
+Then, you commit staged changes.
+ Check File status
+ * $ git status 
+Tracking and Staging a New File
+Single File
+
+Track one file only by using the following format:
+
+git add filename
+All Files
+
+Track all files in a repository by using the following command:
+
+$ git add *
+*After using these commands, files are tracked and staged for committing.
+
+After adding a new file called EXAMPLE, you would see information regarding changes to be committed when using the git status command:
+
+$ git status
+
+On branch master
+
+Changes to be committed:
+
+  (use "git reset HEAD ..." to unstage)
+new file: EXAMPLE
+This information tells us that there are changes to be committed and that the file has been staged.
+
+Committing a File
+After staging one or multiple files, you should commit the changes and record what you did within the commit message:
+
+$ git commit -m “made change x,y,z”
+
