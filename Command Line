@@ -1,25 +1,25 @@
 # **Command Line** 
 *Commmand line/terminal* - is a text based interface to the system. You enter commands by typing them on the keyboard.
 The command line is also very *case sensitivite*.
-	- for example s and S can perform different actions 
+- for example s and S can perform different actions 
 Spaces in a command line are valid but still have to be careful with them.
-	* There are 2 ways to make spaces vaild 
-		1.) **Quotes('')("")** - anything inside quotes are considered a single item 
-		2.) **Escape Characters(\)** - backslash nullifies the special meaning of the next character     
+* There are 2 ways to make spaces vaild 
+1.) **Quotes('')("")** - anything inside quotes are considered a single item 
+2.) **Escape Characters(\)** - backslash nullifies the special meaning of the next character     
 ### **Hidden Files/ Directories**
 In Linux the files name begins with a (.) will be considered to be hidden
- 	* -a = used with other commands to how hidden files
- * Shells - are within the terminal, it's part of the opreating system defines how the terminal will behave after executing commands for you.
-  	* **Bash(Bourne Again Shell)** - most common shell 
- * Paths - a means to get to a particular file or directory on the system
-	**2 Types of Paths**
-	  * Absolute Paths - specify a location in relation to the root directory. they can be identify them easily as they always being with a forward slash (/)
-	  * Relative Paths specify a location in relation to where we currently are in the system. Doesn't begin with a slash. 
-        * **~(tilde)** - shortcut for your home directory.
-	      * **.(dot)** - is a reference to your current directory.
-	      * **..(dotdot)** - is a reference to the parent directory. can be used mulitple times in a path to keep going up the hierarchy.
- * Root - the very top of the structure. it's denoted by a single slash (/).
-	* It can have subdirectories and son on. Flies can reside in any of these directories.
+* -a = used with other commands to how hidden files
+* Shells - are within the terminal, it's part of the opreating system defines how the terminal will behave after executing commands for you.
+* **Bash(Bourne Again Shell)** - most common shell 
+* Paths - a means to get to a particular file or directory on the system
+**2 Types of Paths**
+* Absolute Paths - specify a location in relation to the root directory. they can be identify them easily as they always being with a forward slash (/)
+* Relative Paths specify a location in relation to where we currently are in the system. Doesn't begin with a slash. 
+* **~(tilde)** - shortcut for your home directory.
+* **.(dot)** - is a reference to your current directory.
+* **..(dotdot)** - is a reference to the parent directory. can be used mulitple times in a path to keep going up the hierarchy.
+* Root - the very top of the structure. it's denoted by a single slash (/).
+* It can have subdirectories and son on. Flies can reside in any of these directories.
 ### **Commands** 
 * **echo Command** - used to know which shell you are using, it will display a system variable stating your current shell.
 * **pwd(Print Working Directory) Command** - tells you what your current/present working directory is.
@@ -29,22 +29,21 @@ In Linux the files name begins with a (.) will be considered to be hidden
 * **file Command** - to find out what type of file a particular file is.
 
 ### **Directory Pathways**
- * */etc* - Stores config filees for the system.
- * */var/log* - Stores files for various system programs. (may not have permission to view everything is this directory)
- * */bin* - the location of several commonly used programs.
- * */usr/bin* - another location for programs on the system.
-
+* */etc* - Stores config filees for the system.
+* */var/log* - Stores files for various system programs. (may not have permission to view everything is this directory)
+* */bin* - the location of several commonly used programs.
+* */usr/bin* - another location for programs on the system.
 ### **Everything is a file** 
 examples: 
- - a text file.
- - a directory.
- - your keyboard (one that the system reads from only).
- - your monitor (one that the system writes to only).
+* a text file.
+* a directory.
+* your keyboard (one that the system reads from only).
+* your monitor (one that the system writes to only).
 **File Extension** - normally a set of 2 - 4 characters after a ful stop at the end of a file, which denotes what type of file it is.
- * Common Extensions.
-	- file.exe - an executeable file , or program.
-	- file.txt - a plain text file.
-	- file.png, file.gif, file.jpg - an image.
+* Common Extensions.
+* file.exe - an executeable file , or program.
+* file.txt - a plain text file.
+* file.png, file.gif, file.jpg - an image.
 Linux the system actually ignores the extensions and looks inside the file to see what kind of file it is.
-	- example - file Sasuke.jpg could be renamed to Sasuke.text or just Sasuke and it will still be treated as an image.
-Windows and oter systems the extension is an important and the system uses it to determine what type of file it is. 
+* example - file Sasuke.jpg could be renamed to Sasuke.text or just Sasuke and it will still be treated as an image.
+Windows and oter systems the extension is an important and the system uses it to determine what type of file it is.
